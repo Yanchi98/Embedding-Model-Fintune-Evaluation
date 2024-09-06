@@ -24,7 +24,8 @@ LLM是用的qwen2， 部署方法参考项目（https://github.com/Yanchi98/Flas
 修改之前：
 
 prompt为
-`
+
+```
 Context information is below.
 
 ---------------------
@@ -39,12 +40,13 @@ You are a Professor. Your task is to setup \
 quiz/examination in Chinese. The questions should be diverse in nature \
 across the document in Chinese. The questions should not contain options, not start with Q1/ Q2. \
 Restrict the questions to the context information provided.
-`
+```
 
 输出结果为："1、请从下面的文档中回答，根据相关机构的统计，2022年全球半导体设备销售额中，哪个地区的销售额同比增长幅度最大？"  -> 问题冗长、带instruction
 
 修改后，增加两条约束：
-`
+
+```
 Context information is below.
 
 ---------------------
@@ -61,7 +63,8 @@ across the document in Chinese. The questions should not contain options, not st
 Restrict the questions to the context information provided.
 **The length of each question should not beyond 20 chars.
 Directly give the question without start with any instruction.**
-`
-修改以后的效果：
+```
+
+修改以后的效果比较好：
 ![image](https://github.com/user-attachments/assets/642715e4-ea9a-46cc-91af-74ae7a2b9d3e)
 
