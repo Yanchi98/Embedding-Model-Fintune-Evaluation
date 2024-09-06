@@ -1,6 +1,6 @@
 # Embedding_Fintuning-evaluation
 
-## 环境安装
+# 环境安装
 pip install llama-index-llms-openai
 pip install llama-index-embeddings-openai
 pip install llama-index-finetuning
@@ -12,14 +12,14 @@ Generate Corpus: https://docs.llamaindex.ai/en/stable/examples/finetuning/embedd
 
 
 
-## 优化点
-* 自定义MyLLM类, 替换openai chatgpt3.5（主要是考虑到🪜什么的很麻烦）
+# 优化点
+1、自定义MyLLM类, 替换openai chatgpt3.5（主要是考虑到🪜什么的很麻烦）
 
 LLM是用的qwen2， 部署方法参考项目（https://github.com/Yanchi98/Flask-vllm-qwen-）
 
 重写方法见llm.py，要实现complete方法
 
-* 修改prompt，让query不要超过20char(考虑到用户输入长query的概率较低)，并且不要带引导语
+2、修改prompt，让query不要超过20char(考虑到用户输入长query的概率较低)，并且不要带引导语
 
 修改之前：
 
@@ -66,5 +66,6 @@ Directly give the question without start with any instruction.**
 ```
 
 修改以后的效果比较好：
+
 ![image](https://github.com/user-attachments/assets/642715e4-ea9a-46cc-91af-74ae7a2b9d3e)
 
