@@ -70,3 +70,11 @@ Directly give the question without start with any instruction.**
 
 ![image](https://github.com/user-attachments/assets/642715e4-ea9a-46cc-91af-74ae7a2b9d3e)
 
+3、中文存在编码问题，将生成的dataset保存为json格式时，调用的是lama_index/finetuning/embeddings/common.py中的save_json方法，需要加上ensure_ascii=False
+```
+ def save_json(self, path: str) -> None:
+        """Save json."""
+        with open(path, "w") as f:
+            json.dump(self.dict(), f, indent=4, ensure_ascii=False)
+```
+
