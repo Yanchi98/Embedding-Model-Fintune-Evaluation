@@ -13,6 +13,7 @@ Generate Corpus: https://docs.llamaindex.ai/en/stable/examples/finetuning/embedd
 
 
 # 优化点
+## 生成语料
 1、自定义MyLLM类, 替换openai chatgpt3.5（主要是考虑到🪜什么的很麻烦）
 
 LLM是用的qwen2， 部署方法参考项目（https://github.com/Yanchi98/Flask-vllm-qwen-）
