@@ -19,7 +19,7 @@ pip install datasets==2.21.0
 
 # 向量模型评估
 
-step 1: 将模型放到model目录下，数据集放到data目录下
+step 1: 将模型下载到model目录，可执行bash model_download.sh下载，数据集放到data目录
 
 step2: 执行评估脚本 python embedding_evaluate.py --model bge-base-zh-v1.5 --dataset doc_qa_dataset.json
 
