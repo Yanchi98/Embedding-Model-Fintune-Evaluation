@@ -1,10 +1,30 @@
-# Embedding_Fintuning-evaluation
+# Embedding_Fintuning_evaluation
+
+通过sentence-trasformers进行embedding模型评估
+
+通过llama-index微调向量模型
 
 # 环境安装
+```
+Python 3.12.3
+PyTorch: 2.4.0+cu121
 pip install llama-index-llms-openai
 pip install llama-index-embeddings-openai
 pip install llama-index-finetuning
+pip install sentence-transformers==3.0.1
+pip install transformers==4.43.2
+pip install accelerate==0.34.2
+pip install datasets==2.21.0
+```
 
+# 向量模型评估
+
+step 1: 将模型放到model目录下，数据集放到data目录下
+
+step2: 执行评估脚本 python embedding_evaluate.py --model bge-base-zh-v1.5 --dataset doc_qa_dataset.json
+
+
+# 向量模型微调
 
 llama index 提供造训练语料的方式：
 
@@ -14,6 +34,7 @@ Generate Corpus: https://docs.llamaindex.ai/en/stable/examples/finetuning/embedd
 
 # 优化点
 ## 生成语料
+
 1、自定义MyLLM类, 替换openai chatgpt3.5（主要是考虑到🪜什么的很麻烦）
 
 LLM是用的qwen2， 部署方法参考项目(https://github.com/Yanchi98/Flask-vllm-qwen-)
