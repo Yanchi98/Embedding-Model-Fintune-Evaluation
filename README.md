@@ -19,12 +19,19 @@ pip install datasets==2.21.0
 
 # Evaluation Steps
 
-step 1: Put embedding model to \model, put evaluation datasets to \data, run ```bash model_download.sh```.
+step 1: Put embedding model to \model (run ```bash model_download.sh```), put evaluation datasets to \data.
 
 step 2: run ```python embedding_evaluate.py --model bge-base-zh-v1.5 --dataset doc_qa_dataset.json```.
 
 
 # Fine-Tuning
+
+step 1 (optional): Data Augment if needed. Put corpus.txt to \docs. run ```python data_generate.py```.
+
+step 2: Put training dataset and evaluation dataset to \data.
+
+step 3: run ```python finetune.py```.
+
 llama-index provides a data augment method：
 
 Generate Corpus: https://docs.llamaindex.ai/en/stable/examples/finetuning/embeddings/finetune_embedding/#finetune-embeddings
