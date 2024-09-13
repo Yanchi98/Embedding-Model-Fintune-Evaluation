@@ -19,13 +19,13 @@ pip install datasets==2.21.0
 
 # Evaluation Steps
 
-step 1: download embedding model to \model, download evaluation datasets to \data, run ```bash model_download.sh```.
-step2: 执行评估脚本 python embedding_evaluate.py --model bge-base-zh-v1.5 --dataset doc_qa_dataset.json
+step 1: Put embedding model to \model, put evaluation datasets to \data, run ```bash model_download.sh```.
+
+step 2: run ```python embedding_evaluate.py --model bge-base-zh-v1.5 --dataset doc_qa_dataset.json```.
 
 
-# 向量模型微调
-
-llama index 提供造训练语料的方式：
+# Fine-Tuning
+llama-index provides a data augment method：
 
 Generate Corpus: https://docs.llamaindex.ai/en/stable/examples/finetuning/embeddings/finetune_embedding/#finetune-embeddings
 
