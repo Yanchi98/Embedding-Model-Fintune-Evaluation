@@ -1,10 +1,10 @@
 # Embedding_Fintuning_evaluation
 
-通过sentence-trasformers进行embedding模型评估
+sentence-transformers for embedding model evaluation
 
-通过llama-index微调向量模型
+llama-index for finetuning embedding model
 
-# 环境安装
+# Requirements
 ```
 Python 3.12.3
 PyTorch: 2.4.0+cu121
@@ -17,7 +17,7 @@ pip install accelerate==0.34.2
 pip install datasets==2.21.0
 ```
 
-# 向量模型评估
+# Evaluation Steps
 
 step 1: 将模型下载到model目录，可执行bash model_download.sh下载，数据集放到data目录
 
