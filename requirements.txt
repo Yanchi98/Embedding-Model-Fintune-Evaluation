@@ -1,7 +1,9 @@
-pip install llama-index-llms-openai
-pip install llama-index-embeddings-openai
-pip install llama-index-finetuning
-pip install sentence-transformers==3.0.1
-pip install transformers==4.43.2
-pip install accelerate==0.34.2
-pip install datasets==2.21.0
+llama-index-llms-openai
+llama-index-embeddings-openai
+llama-index-finetuning
+sentence-transformers==3.0.1
+transformers==4.43.2
+accelerate==0.34.2
+datasets==2.21.0
+faiss-gpu
+jsonlines
