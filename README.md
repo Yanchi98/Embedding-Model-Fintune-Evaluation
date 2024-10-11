@@ -1,8 +1,8 @@
 # Embedding_Fintuning_evaluation
 
-🤖sentence-transformers for embedding model evaluation
+🤖sentence-transformers for embedding model evaluation and finetuning.
 
-🦙llama-index for finetuning embedding model
+🦙llama-index for training data augmentation.
 
 # Requirements
 ```
