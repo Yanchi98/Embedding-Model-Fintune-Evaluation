@@ -30,7 +30,7 @@ step 1 (optional): Data Augment if needed. Put corpus.txt to \docs. run ```pytho
 
 step 2: Put training dataset and evaluation dataset to \data.
 
-step 3: run ```python finetune.py --model bge-m3 --train train_dataset.json --val val_dataset.json```.
+step 3: run ```python finetune.py --model bge-large-zh-v1.5 --train Dragon/train_dataset.json --val Dragon/val_dataset.json --hnm True```.
 
 llama-index provides a data augment method：
 
